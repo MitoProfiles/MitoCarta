@@ -53,7 +53,7 @@ mitocarta::mitocarta_data$A_Human_MitoCarta3
 # to run the dataframe with human genome
 mitocarta::mitocarta_data$B_Human_All_Genes
 
-# to run the daaframe with mitochondria patways
+# to run the daaframe with mitochondria pathways
 mitocarta::mitocarta_data$C_MitoPathways
 ```
 
