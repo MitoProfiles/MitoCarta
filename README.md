@@ -50,7 +50,7 @@ To run one of the dataframes included in `{MitoCarta}` use the command:
 # to run the dataframe with all mitochondria genes
 mitocarta::mitocarta_data$A_Human_MitoCarta3
 
-# to run the dataframe with human genoma
+# to run the dataframe with human genome
 mitocarta::mitocarta_data$B_Human_All_Genes
 
 # to run the daaframe with mitochondria patways
