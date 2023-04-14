@@ -1,0 +1,14 @@
+Package: mitocarta
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Author: Catarina Ferreira <catarinagferreira2000@gmail.com>
+Maintainer: Catarina Ferreira <catarinagferreira2000@gmail.com>
+Description: This package contains raw data from the dataset MitoCarta3.0, 
+    including the Human MitoCarta and the MitoPahways.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    R (>= 2.10)
+RoxygenNote: 7.2.3
