@@ -41,7 +41,7 @@ use the following command in your R console:
 
 ``` r
 # Access to the hepl page of the package
-??mitocarta_data
+?mitocarta::mitocarta_data
 ```
 
 To run one of the dataframes included in `{MitoCarta}` use the command:
