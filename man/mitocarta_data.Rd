@@ -3,7 +3,7 @@
 \docType{data}
 \name{mitocarta_data}
 \alias{mitocarta_data}
-\title{MitoCarta3.0 list and Maestro rankings of mitochondrial localization for all human genes}
+\title{MitoCarta3.0: An Inventory of Mammalian Mitochondrial Proteins and Pathways}
 \format{
 A data frame containing 1137 rows and 48 columns.
 \describe{
@@ -209,9 +209,25 @@ A data frame containing 19248 rows and 48 columns.
 mitocarta_data
 }
 \description{
-This RData package contains data with specific datasets:
+MitoCarta3.0 is an inventory of 1136 human and 1140 mouse genes encoding
+proteins with strong support of mitochondrial localization, now with
+sub-mitochondrial compartment and pathway annotations. To generate this
+inventory, the team from MitoCarta performed mass spectrometry of mitochondria isolated from
+fourteen tissues, assessed protein localization through large-scale GFP
+tagging/microscopy, and integrated these results with six other genome-scale
+datasets of mitochondrial localization, using a Bayesian approach. MitoCarta3.0,
+released 2020, uses manual literature curation to revise the previous MitoCarta2.0
+inventory (78 added and 100 removed genes), provide annotation of
+sub-mitochondrial localization, and assign genes to a custom ontology of 149
+mitochondrial pathways.
 }
 \details{
+The original data can be found here: [MitoCarta](https://www.broadinstitute.org/mitocarta/mitocarta30-inventory-mammalian-mitochondrial-proteins-and-pathways)
+The original citation for these data: [Rath S, et al. 2021](https://pubmed.ncbi.nlm.nih.gov/33174596/)
+
+This RData package contains the MitoCarta data in list form, which includes
+three dataframes of the human MitoCarta.
+
 A: Human MitoCarta3.0. Data for all 1136 human  genes with high confidence of mitochondrial
 localization (based on integrated proteomics, computation, and microscopy)
 
