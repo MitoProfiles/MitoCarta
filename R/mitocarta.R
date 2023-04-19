@@ -40,6 +40,20 @@ mitocarta_data$C_MitoPathways <- read_xls(mitocarta_path,
 mitocarta_data$C_MitoPathways %>%
   select(2:4) -> mitocarta_data$C_MitoPathways # WORKAROUND to discard empty columns
 
+
+# Remove all "NA" rows
+mitocarta_data$A_Human_MitoCarta3 %>%
+  filter(., rowSums(is.na(.)) != ncol(.)) -> mitocarta_data$A_Human_MitoCarta3
+
+mitocarta_data$B_Human_All_Genes %>%
+  filter(., rowSums(is.na(.)) != ncol(.)) -> mitocarta_data$B_Human_All_Genes
+
+mitocarta_data$C_MitoPathways %>%
+  filter(., rowSums(is.na(.)) != ncol(.)) -> mitocarta_data$C_MitoPathways
+
+
+
+
 ## Save the mitocarta data
 save(mitocarta_data, file = "mitocarta.RData")
 
