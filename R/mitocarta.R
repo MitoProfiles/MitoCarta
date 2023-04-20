@@ -52,9 +52,19 @@ mitocarta_data$C_MitoPathways %>%
   filter(., rowSums(is.na(.)) != ncol(.)) -> mitocarta_data$C_MitoPathways
 
 
+# Remove all spaces and commas in the MitoPathway column of the 'C_MItoPathways' sheet
+mitocarta_data$C_MitoPathways$MitoPathway %>%
+  gsub(",", "", .) %>%
+  gsub(" ", "_", .) -> mitocarta_data$C_MitoPathways$MitoPathway
+
+
+# Remove all spaces in the Genes column of the 'C_MItoPathways' sheet
+mitocarta_data$C_MitoPathways$Genes %>%
+  gsub(" ", "", .) -> mitocarta_data$C_MitoPathways$Genes
 
 
 ## Save the mitocarta data
 save(mitocarta_data, file = "mitocarta.RData")
 
 usethis::use_data(mitocarta_data, overwrite = TRUE)
+
